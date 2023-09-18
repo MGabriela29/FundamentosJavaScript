@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calculadora JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card"> 
+            <div class="field pixel">
+                    <label for="pixel">Primer Valor: </label>
+                <input type="text" name="" id="num1" placeholder="num1" class="m-pixel"></div>
+                <br>
+                <div class="field pixel">
+                    <label for="pixel">Segundo Valor: </label>
+                <input type="text" name="" id="num2" placeholder="num2" class="m-pixel"></div>
+                <br>
+                <div class="field pixel">
+                    <label for="pixel">Resultado: </label>
+                <input type="text" name="" id="res" placeholder="resultado" class="m-pixel"></div>
+                <br>
+                
+                <button onclick="suma()" class="efect">Suma</button>
+                <button onclick="resta()" class="efect">Resta</button>
+                <button onclick="multiplicar()" class="efect">Multiplicar</button>
+                <button onclick="dividir()" class="efect">Dividir</button>
+                <button onclick="limpiar()" class="efect">Limpiar</button>
+        </div>
+    </div>
+    <script src="./calculadora.js"></script>
+</body>
+</html>
