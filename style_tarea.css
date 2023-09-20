@@ -1,0 +1,155 @@
+button {
+    margin: 20px;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-5 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(255,27,0);
+  background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+  }
+  .btn-5:hover {
+    color: #f0094a;
+    background: transparent;
+     box-shadow:none;
+  }
+  .btn-5:before,
+  .btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #f0094a;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+  }
+  .btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .btn-5:hover:before,
+  .btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
+
+
+  * {
+	box-sizing: border-box;
+}
+
+h2 {
+	font-family: 'Girassol', cursive;
+	font-size: 60px;
+	padding: 0;
+	margin: 5px;
+}
+
+.cabeza {
+	text-align: center;
+	background-color: #1444B5;
+	color: white;
+	padding: 70px;	
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	cursor: pointer;
+	background-color: #D5D8E8;
+	font-size: 18px;
+	padding: 10px 20px;
+	transition: 0.2s;
+}
+
+ul li:nth-child(even){
+	background-color: #C5C5D4;
+}
+
+ul li:hover {
+	background-color: #9A99C7; 
+}
+
+ul li.chequeado {
+	background: rgb(141, 131, 190);
+	color: #F2F0F5;
+	text-decoration: line-through;
+}
+
+ul li.chequeado::before {
+	content: url(https://i.imgur.com/EFRXAqH.png);
+	height: 15px;
+	width: 7px;
+	position: absolute;
+	left: 12px;
+}
+
+.close {
+	position: relative;
+	float: right;
+	right: 0;
+	top: 0;
+}
+
+.close:hover {
+	color: white;
+	background-color: #1444B5;
+}
+
+input {
+	float: left;
+	width: 75%;
+	padding: 5px 0;
+}
+
+.agregar {
+	width: 25%;
+	border-style: none;
+	background-color: #5E454D;
+	padding: 5px 5px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.agregar:hover {
+	background-color: #A6858F;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+	.agregar {
+		font-size: 10px;
+	}
+}
